@@ -118,10 +118,11 @@ ol {
   border-bottom: 1px solid #fff;
   appearance: none;
 
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: .1px;
 }
 
 /* ЧЕКБОКСЫ */
@@ -145,20 +146,18 @@ ol {
 .search-form__pseudo-checkbox {
   margin-right: 5px;
 
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border: 1px solid #fff;
-
-  display: inline-block;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   width: 15px;
@@ -177,12 +176,17 @@ ol {
   border: 1px solid #fff;
 
   background-color: transparent;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
 
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
@@ -224,7 +228,7 @@ ol {
 /* ЗАГОЛОВОК */
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70px;
@@ -287,7 +291,7 @@ ol {
 .content__video-card-title {
   margin-bottom: 6px;
 
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
